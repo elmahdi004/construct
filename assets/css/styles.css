@@ -171,6 +171,7 @@ img {
     justify-content: space-between;
     padding: 10px;
     transition: all 0.7s;
+    z-index: 10;
     } 
 }
 .header nav > .nav_menu > .close_btn{
@@ -179,6 +180,7 @@ font-size: 1.1em;
 cursor: pointer;
 }
 .header nav > .nav_menu > .nav_list > ul{
+  margin-top: 40px;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -201,6 +203,12 @@ cursor: pointer;
   color: white;
   cursor: pointer;
 }
+.button{
+  text-decoration: none;
+  background: var(--first-gradient);
+  color: white;
+  padding: 10px 15px;
+}
 /* Navigation for mobile devices */
 
 
@@ -214,8 +222,74 @@ cursor: pointer;
 
 
 /*=============== HOME ===============*/
-
-
+.home{
+  background: var(--black-color);
+}
+.home_container{
+  padding: 10px 20px;
+}
+.home_content > .home_data{
+  text-align: center;
+}
+.home_content > .home_data h1{
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  color: white;
+  margin: 10px 0;
+}
+.home_content > .home_data p{
+  color: var(--text-color-light);
+  margin-bottom: 2em;
+}
+.home_content > .home_data .home_buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.home_content > .home_data .home_buttons > .button_link{
+  color: var(--first-color);
+}
+.home_content > .home_data .home_buttons > .button_link > span{
+  font-weight: var(--font-semi-bold);
+}
+.home_content > .home_data .home_buttons > .button_link > i{
+  font-size: 1.2em;
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.button_link:hover > i{
+transform: translateX(0.5rem);
+}
+.home_info{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+.home_info  .home_info_title{
+  color: var(--second-color);
+  font-size: 2.5rem;
+  font-weight: var(--font-bold);
+}
+.home_info  .home_info_description{
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
+.home_images{
+  justify-self: center;
+  position: relative;
+}
+.home_images > .img1{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.home_images > .img2{
+  position: absolute;
+  width: 250px;
+  border: 10px solid var(--black-color);
+  bottom: 0rem;
+}
 /*=============== BUTTON ===============*/
 
 

@@ -22,7 +22,15 @@ if(navClose){
     })
 }
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.menu_item')
 
+const linkAction = () =>{
+    console.log('click');
+    const navMenu = document.getElementById('nav-menu');
+    console.log(navMenu);
+    navMenu.style.right = '-1000px';
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
