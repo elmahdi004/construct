@@ -357,10 +357,41 @@ transform: translateX(0.5rem);
   width: 250px;
 }
 /*=============== SERVICES ===============*/
-
-
+.services_container{
+  row-gap: 2rem;
+}
+.services_container > .services_data{
+  text-align: center;
+}
+.services_container > .services_data > .services_description{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+.services_card{
+  border: 2px solid var(--gray-border);
+  transition: border .4s;
+  padding: 15px;
+  width: 270px;
+}
+.services_card:hover{
+  border-color:var(--first-color) ;
+}
+.services_card > .services_icon{
+  background: #000;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  color: var(--body-color);
+}
 /* Swiper class */
-
+.swiper {
+margin-inline: initial;
+padding-bottom: 4rem;
+}
 
 /*=============== PROJECTS ===============*/
 

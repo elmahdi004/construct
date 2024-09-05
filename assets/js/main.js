@@ -42,7 +42,17 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader);
 scrollHeader();
 /*=============== SWIPER SERVICES ===============*/ 
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    grabCursor : true,
+    spaceBetween : '24',
+    slidesPerView : 'auto',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
+  });
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
