@@ -337,6 +337,25 @@ transform: translateX(0.5rem);
   display: flex;
   column-gap: .5rem;
 }
+.about_container > .about_data > .about_list .about_list_item i{
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+.about_images {
+  position: relative;
+  justify-self: center;
+  margin-top: 20px;
+}
+.about_images .img1{
+  border: 5px solid var(--body-color);
+  top: -7rem;
+  right: -2rem;
+  width: 200px;
+  position: absolute;
+}
+.about_images .img2{
+  width: 250px;
+}
 /*=============== SERVICES ===============*/
 
 
