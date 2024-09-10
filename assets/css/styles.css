@@ -511,12 +511,73 @@ transition: .4s border-color;
 .social_media_contact_item:hover{
   transform: translateY(-.7rem);
 }
-.this_is_elmahdi_bellaziz_ibn_ali_abou_khalid_ibn_thaza_of_ali_ben_khalid_abou_mina_noma{
-  
+
+/*=============== FOOTER  ===============*/
+.footer{
+  background: var(--black-color);
+  color: var(--text-color-light);
+  padding: 20px 0;
 }
-/*=============== FOOTER by El mahdi bellaziz ===============*/
-
-
+.footer_container{
+  row-gap: 2rem;
+}
+.footer_logo{
+  display: flex;
+  column-gap: 0.5rem;
+  margin-block: .5rem;
+}
+.footer_logo span{
+  color: var(--white-color);
+  font-weight: var(--font-bold);
+  font-size: var(--h3-font-size);
+}
+.footer_logo i{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+}
+.footer_email,.footer_info{
+  font-style: normal;
+}
+.footer_email{
+  margin-block: .5rem;
+}
+.footer_content{
+  grid-template-columns: repeat(2,50%);
+}
+.footer_title{
+  color: white;
+  margin-block: .5rem;
+  font-size: var(--h3-font-size);
+}
+.footer_info{
+  margin-block: .5rem;
+}
+.footer_link{
+  color: var(--text-color-light);
+  transition: color 0.4s;
+  display: flex;
+  margin-block: .5rem;
+}
+.footer_link:hover{
+  color: var(--first-color);
+}
+.footer .social_media{
+  display: flex;
+  column-gap: .8rem;
+}
+.footer .social_media .social_media_link{
+color: var(--first-color);
+text-decoration: none;
+font-size: 1.2rem;
+transition: transform .4s;
+}
+.footer .social_media .social_media_link:hover{
+  transform: translateY(-.4rem);
+}
+.footer_copy{
+  text-align: center;
+  margin-top: 2rem;
+}
 /*=============== SCROLL BAR ===============*/
 
 
