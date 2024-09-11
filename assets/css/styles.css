@@ -134,15 +134,22 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: transparent;  
+  background-color: var(--black-color);  
   width: 100%;
   padding: 20px 10px;
-  z-index: 10;
+  z-index: 100;
   transition: background-color 0.4s;
 }
 .bg-header{
   background-color: var(--body-color);
   box-shadow: 0 4px 16px hsla(255, 90%, 8%, .1);
+}
+.bg-header li a{
+  color: var(--text-color-light) !important;
+}
+.bg-header li.button a{
+  color: white !important;
+
 }
 .header.bg-header nav > .nav-logo >  span,
 .header.bg-header nav > .close_btn
@@ -220,7 +227,7 @@ cursor: pointer;
 .button{
   text-decoration: none;
   background: var(--first-gradient);
-  color: white;
+  color: white ;
   padding: 10px 15px;
   width: fit-content;
 }
@@ -624,9 +631,93 @@ transition: transform .4s;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width:380px) {
+  .about_container{
+      justify-content: center;
+  }
+  .about_list{
+    grid-template-columns: repeat(1,200px) !important;
+    justify-content: center;
+  }
+  .about_description{
+    padding-bottom: 1rem !important;
+  }
+}
 
 /* For medium devices */
-
-
+@media screen and (min-width:381)and(max-width:540px){
+  .footer_content{
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3rem;
+  }
+}
+@media screen and (min-width:750px){
+  .home_info{
+    padding: 2rem 0;
+  }
+  .home_info_title{
+    font-size: 3.5rem !important;
+  }
+  .img1{
+    right: -4rem !important;
+    top: -10rem !important;
+    width: 300px !important;
+  }
+  .img2{
+    width: 450px !important;
+  }
+  .about_images{
+    margin-top: 100px !important;
+  }
+  .projects_card img{
+    width: 100%;
+  }
+  .projects_container{
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_container img{
+    width: 450px;
+  }
+  .contact_data{
+    grid-template-columns: repeat(2,280px) !important;
+  }
+  .footer_content{
+    grid-template-columns: repeat(3,max-content);
+    column-gap: 4rem;
+  }
+}
 /* For large devices */
+@media screen and (min-width:1200px){
+  .close_btn{
+    display: none;
+  }
+  nav{
+    column-gap: 10rem !important;
+    align-items: center;
+  }
+  .nav_list > ul{
+    flex-direction: row !important;
+    column-gap: 4rem !important;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+  .home{
+    margin-top: 2rem;
+  }
+  .projects_container{
+    grid-template-columns: repeat(3,30%) !important;
+    padding: 2rem;
+  }
+  .contact_data{
+    grid-template-columns: repeat(3,300px) !important;
+    padding: 1rem 0;
+  }
+  .footer{
+    padding: 4rem 0 1rem 0 !important;
+  }
+  .footer_container{
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+}
