@@ -184,13 +184,13 @@ img {
     top: 0;
     height: 100%;
     background-color: var(--black-color);
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     transition: all 0.7s;
     z-index: 10;
-    border-left: 1px solid var(--first-color);
+    border-left: 1px solid var(--gray-border);
     } 
 }
 .header nav > .nav_menu > .close_btn{
@@ -454,6 +454,9 @@ padding-bottom: 4rem;
   text-align: initial;
   border: 1px solid transparent;
   transition: border-color .4s;
+}
+.projects_card img{
+  width: 100%;
 }
 .projects_card:hover{
   border-color: var(--first-color);
